@@ -53,7 +53,7 @@ x = torch.rand(5, 5, requires_grad=True)
 y = torch.rand(5, 5, requires_grad=True)
 
 ```
-![1](dl1.png)
+![1](/images/dl1.png)
 定义x，y两个变量。
 接下来我们比较不同的乘法
 ```python
@@ -73,7 +73,7 @@ print(z)
 
 ```
 叉乘的偏导和z的值
-![2](dl2.png)
+![2](/images/dl2.png)
 
 
 mm是叉乘，mul和*是点乘

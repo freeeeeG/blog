@@ -14,19 +14,19 @@ tags: 学习
 
 # 代码结构
 
-![1](images/games202_1.png)
+![1](/images/games202/games202_1.png)
 主要是 assets lib src三个目录，接下来以此介绍
 
 ## assets
 
 顾名思义，是放资产的地方。这个地方放你的模型资源。
-![2](images/games202_2.png)
+![2](/images/games202/games202_2.png)
 一个模型内容只有一个obj，存放模型顶点数据。一个mtl和一个png来存储uv贴图信息。
 
 ## lib
 
 顾名思义，这是个图书馆(bushi)，你用的所有静态库。
-![3](images/games202_3.png)
+![3](/images/games202/games202_3.png)
 
 ### dat.gui.js
 一个轻量 GUI 框架，主要为了实现参数调整的GUI功能
@@ -64,7 +64,7 @@ three.js 封装了 WebGL 的 API， 提供了一套更加易于使用的接口
 
 ## src
 
-![4](images/games202_4.jpg)
+![4](/images/games202/games202_4.jpg)
 
 ### engine.js
 
