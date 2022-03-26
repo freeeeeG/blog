@@ -13,7 +13,7 @@ IDE：vs
 没有使用vscode，是因为每次写完代码都要用cmake重新编译一次，debug好麻烦。
 ### 配置vs
 c++标准: 17
-![1](games101_1_1.png)
+![1](/images/games101/games101_1_1.png)
 前四个作业使用了opencv和Eigen3这两个第三方库，所以需要手动添加。
 Eigen3还好，nuget包上直接下下来就好了只是要注意头文件写成(自行使用nuget)
 ```
@@ -23,11 +23,11 @@ Eigen3还好，nuget包上直接下下来就好了只是要注意头文件写成
 opencv就比较麻烦一点不能nuget一步到位。不太清楚为什么不可以。
 网上的方法都是自己配置link。我这里也是
 先include配置路径
-![2](images/games101_1_2.png)
+![2](/images/games101/games101_1_2.png)
 然后是library的路径
-![3](images/games101_1_3.png)
+![3](/images/games101/games101_1_3.png)
 最后再去配一下link里面的input就好了。不过这里要注意的点是两个lib文件一个有d一个没有d分别对应debug模式和release模式。
-![4](images/games101_1_4.png)
+![4](/images/games101/games101_1_4.png)
 以上，环境算是配好了。前四个作业比较麻烦，因为代码中的矩阵和显示用这两个库写起来挺方便的。之后老师出于些原因，自己手撸了一个，就不用我们配环境了。
 
 # 作业一
@@ -35,11 +35,11 @@ opencv就比较麻烦一点不能nuget一步到位。不太清楚为什么不可
 直接开整作业一。
 先让我们康康这个作业框架里有什么
 ## 代码总览
-![5](images/games101_1_5.png)
+![5](/images/games101/games101_1_5.png)
 哦！我亲爱的老弟，这是一个天杀的所以程序都有的main，一个光栅化（rasterizer），还有一个三角形(Triangle)的类
 ### main函数
 先让我们康康这个main里面有什么
-![6](images/games101_1_6.png)
+![6](/images/games101/games101_1_6.png)
 emmmmmm
 上面先是闫老师在课提到的mvp模型对应的三个方法
 然后定义了一个光栅化程序，眼睛的位置。
@@ -47,7 +47,7 @@ emmmmmm
 定义好之后，就扔到光栅化中去。这一步我们可以想象成，建模师把模型修好了现在要扔给计算器（就是那个r）去跑。
 if那一行对应命令行操作的先不管。
 我们现在打开while先康康
-![7](images/games101_1_7.png)
+![7](/images/games101/games101_1_7.png)
 第一行先不管，作业一暂时没有用到深度测试和颜色填充（所以并没有什么软用在这）
 然后进行mvp
 最后光栅化成像（r.draw）
@@ -131,7 +131,7 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,float zN
 }
 ```
 9到12行进行透视投影转化为正交投影的矩阵
-![8](images/games101_1_8.png)
+![8](/images/games101/games101_1_8.png)
 原点是我们的eyes_pos移动到原点之后的点，也就是我们眼睛看的方向。
 n是我们视点到屏幕的距离。
 任意一点到屏幕上的xy的变化我们用三角形很容易得出关系是
